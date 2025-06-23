@@ -1,0 +1,95 @@
+/* Reset base */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 2rem;
+  background-color: turquoise;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+/* Outer container */
+.container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Text area wrapper */
+.text-mod {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Controls layout */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+ 
+  
+}
+
+/* Buttons + select styling */
+.controls button,
+.controls select {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+}
+
+.controls button:hover,
+.controls select:hover {
+  background-color: #555;
+}
+
+/* Textarea style */
+textarea {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 8px;
+  border: none;
+  resize: vertical;
+  font-size: 1rem;
+  line-height: 1.6;
+  height: 200px;
+  background: #f7f7f7;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Stats */
+.stats {
+  margin-top: 1rem;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+}
+
+/* Preview */
+.preview {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  min-height: 100px;
+  white-space: pre-wrap;
+}
